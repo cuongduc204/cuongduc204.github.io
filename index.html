@@ -1,31 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Create product list with CSS3</title>
-    <style type="text/css">
-        ProductDetails {display: none:}
-        Product img {
-            width: 150px;
-            height: 150px;
-            border-radius: 20px;
-            box-shadow: 5px 5px 10px #aaa;
-        }
-        ProductName {font-weight: bold;}
-        ProductPrice {font-style: italic;}
-        ProductPrice:before {content: " - ";}
-        Product {
-            text-align: center;
-            width: 150px;
-            margin: 0px 20px;
-            float: left;
-            cursor: pointer;
-        }
-        Product:hover
-        ProductDetails {display: block;}        
-        </style>
-        </head>
+<meta charset="utf-8">
+<title>The priority of selectors</title>
+<style type="text/css">
+    {font: 20px "Comic Sans MS";}
+MyCostumizeTag {
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+    width: 500px;
+}
+div {
+    background-color: yellow;
+    margin: 0px 0px 5px 5px;
+    width: 300px;
+}
+.GroupFormat {
+    font-weight: bold;
+    color: #f00;
+    width: 400px;
+}
+#TheHighestPriority {
+    background-color: #000;
+    font-weight: none;
+    font: italic 30px "Times New Roman";
+    color: #fff;
+}
+</style>
+</head>
 <body>
-    
+    <MyCustomizeTag>Here is customize tag</MyCustimzeTag>
+    <div>The first paragraph.</div>
+    <div class="GroupFormat">The second paragraph.</div>
+    <div class="GroupFormat" id="TheHighestPriority">
+        The third paragraph.
+    </div>
+    <div>The fourth paragraph.</div>
+    <div class="GroupFormat">The fifth paragraph.</div>
+    <div class="GroupFormat">The sixth paragraph.</div>
+    <div>The seventh paragraph.</div>
 </body>
 </html>
