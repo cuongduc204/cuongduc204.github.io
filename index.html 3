@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html>
 <head>
@@ -24,3 +25,6 @@
     Product:hover ProductDetails {display: block;}
 </style>
 </head>
+=======
+
+>>>>>>> bf94221b560a9f557a838c08a151f0cfaa7bd445
